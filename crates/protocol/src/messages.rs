@@ -9,7 +9,6 @@ pub struct PeerEndpoint {
     pub udp_addr: String,
     pub supernode_addr: String,
     pub relay_required: bool,
-    pub status: String,
 }
 
 /// Peer/login request variants.
@@ -31,14 +30,6 @@ pub enum Request {
     PresenceUpdate {
         username: String,
         token: String,
-        status: String,
-    },
-    AnnouncePeer {
-        username: String,
-        token: String,
-        tcp_addr: String,
-        udp_addr: String,
-        relay_required: bool,
         status: String,
     },
     ConnectRequest {
@@ -79,10 +70,6 @@ pub enum Response {
     },
     RelayRequired {
         relay_addr: String,
-    },
-    IncomingSignal {
-        from_user: String,
-        payload: serde_json::Value,
     },
     SignalDelivered,
     Error {
