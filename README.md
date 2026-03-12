@@ -1,6 +1,6 @@
-# skype-rs
+# skip-rs
 
-`skype-rs` is a production-oriented Rust workspace that emulates the *infrastructure* of legacy Skype's hybrid architecture.
+`skip-rs` is a production-oriented Rust workspace that emulates the *infrastructure* of legacy Skype's hybrid architecture.
 
 It intentionally excludes any proprietary Skype clients or binaries and focuses only on self-hosted network services:
 
