@@ -9,7 +9,6 @@ relay_port = 9002
 
 supernode_cache_size = 128
 peer_cluster_limit = 500
-database_url = "sqlite://./data/skype-rs.db"
 
 # Optional bootstrap list for supernode-to-supernode directory federation.
 known_supernodes = ["127.0.0.1:9001"]

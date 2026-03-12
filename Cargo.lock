@@ -190,7 +190,6 @@ dependencies = [
  "hex",
  "sha2",
  "sqlx",
- "tokio",
  "uuid",
 ]
 

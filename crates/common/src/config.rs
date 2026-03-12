@@ -14,14 +14,8 @@ pub struct NetworkConfig {
     pub relay_port: u16,
     pub supernode_cache_size: usize,
     pub peer_cluster_limit: usize,
-    #[serde(default = "default_database_url")]
-    pub database_url: String,
     #[serde(default)]
     pub known_supernodes: Vec<String>,
-}
-
-fn default_database_url() -> String {
-    "sqlite://./data/skype-rs.db".to_string()
 }
 
 impl NetworkConfig {
